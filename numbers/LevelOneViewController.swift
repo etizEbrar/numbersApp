@@ -50,16 +50,23 @@ class LevelOneViewController: UIViewController {
             }
         }
 
-        @objc private func numberButtonTapped(_ sender: UIButton) {
+    @objc private func numberButtonTapped(_ sender: UIButton) {
             let arViewController = ARViewController()
-                present(arViewController, animated: true, completion: {
-                    if sender.tag == 2 {
-                        // 1 numaralı buton için "butterfly" modelini yükle
-                        arViewController.loadModel(named: "butterfly")
-                    } else if sender.tag == 3 {
-                        // 2 numaralı buton için "duck" modelini 2 adet yükle
-                        arViewController.loadModel(named: "duck")
-                    }
-                })
+            present(arViewController, animated: true, completion: {
+                if sender.tag == 2 {
+                    arViewController.loadModel(named: "Butterfly")
+                } else if sender.tag == 3 {
+                    arViewController.loadModel(named: "Duck")
+                }else if sender.tag == 4 {
+                    for i in 0..<3 {
+                                    arViewController.loadModel(named: "Zebra", positionOffset: Float(i))
+                                }
+                }else if sender.tag == 5 {
+                    arViewController.loadModel(named: "Pigeons")
+                }else if sender.tag == 6 {
+                    arViewController.loadModel(named: "Great_White_Shark")
+                }
+                // Diğer numaralar için benzer ifadeler ekleyin.
+            })
         }
     }

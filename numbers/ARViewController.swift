@@ -3,20 +3,32 @@ import SceneKit
 import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
-
     var sceneView: ARSCNView!
+    
+    let modelProperties: [String: (scale: SCNVector3, position: SCNVector3)] = [
+            "Butterfly": (scale: SCNVector3(0.0022, 0.0022, 0.0022), position: SCNVector3(0, 0, -0.5)), // kelebek
+            "Duck": (scale: SCNVector3(0.1, 0.1, 0.1), position: SCNVector3(0, -0.5, -0.5)), // ördek
+            "Zebra": (scale: SCNVector3(0.04, 0.04, 0.4), position: SCNVector3(0, 0, 0)), // örnek
+            "Pigeons": (scale: SCNVector3(0.2, 0.2, 0.2), position: SCNVector3(0, 0.5, -0.5)), // örnek
+            "Great_White_Shark": (scale: SCNVector3(0.2, 0.2, 0.2), position: SCNVector3(0, 0.5, -0.5)) // örnek
+        ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupARSceneView()
-        ARWorldTrackingConfiguration()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        // ARKit konfigürasyonunu başlatın
+        let configuration = ARWorldTrackingConfiguration()
+        sceneView.session.run(configuration)
+    }
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-
-        // AR oturumunu durdurun
-        sceneView.session.pause()
+        sceneView.session.pause() // AR oturumunu durdurun
     }
 
     private func setupARSceneView() {
@@ -25,29 +37,26 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
         sceneView.delegate = self
         sceneView.scene = SCNScene()
-
-        let configuration = ARWorldTrackingConfiguration()
-        sceneView.session.run(configuration)
-        
-        // Debug seçeneklerini kaldırın veya yorum satırı yapın
-        // sceneView.debugOptions = [.showWorldOrigin, .showFeaturePoints]
     }
-
-
-    func loadModel(named modelName: String) {
-        guard let modelURL = Bundle.main.url(forResource: modelName, withExtension: "usdz") else {
-            print("\(modelName) model dosyası bulunamadı")
+    
+    func loadModel(named modelName: String, positionOffset: Float = 0) {
+        guard let modelURL = Bundle.main.url(forResource: modelName, withExtension: "usdz"),
+              let properties = modelProperties[modelName] else {
+            print("\(modelName) model dosyası bulunamadı veya model özellikleri tanımlanmamış.")
             return
         }
 
         let modelNode = SCNNode()
         modelNode.loadModel(from: modelURL)
-        modelNode.position = SCNVector3(x: 0, y: 0, z: -1) // Modelin pozisyonunu ayarlayın
-        modelNode.scale = SCNVector3(2, 2, 2) // Ölçeği ayarlayın
-
+        modelNode.scale = properties.scale
+        // Pozisyonu hafifçe değiştirerek birden fazla modeli yan yana yerleştirin
+        modelNode.position = SCNVector3(properties.position.x + positionOffset,
+                                        properties.position.y,
+                                        properties.position.z)
         sceneView.scene.rootNode.addChildNode(modelNode)
     }
 
+    
 }
 
 extension SCNNode {

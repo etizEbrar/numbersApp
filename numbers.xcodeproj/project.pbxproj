@@ -17,6 +17,13 @@
 		7176A1F32B1CCF6C00BE8A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7176A1F12B1CCF6C00BE8A1F /* LaunchScreen.storyboard */; };
 		7176A1FB2B1CCFB300BE8A1F /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176A1FA2B1CCFB300BE8A1F /* ARViewController.swift */; };
 		7176A1FD2B1CD16E00BE8A1F /* LevelOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176A1FC2B1CD16E00BE8A1F /* LevelOneViewController.swift */; };
+		717E53F02B48BC6000FD3404 /* Scarlet_Macaw.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 717E53EF2B48BC6000FD3404 /* Scarlet_Macaw.usdz */; };
+		717E53F22B48BC6900FD3404 /* Love_Birds_Parrot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 717E53F12B48BC6900FD3404 /* Love_Birds_Parrot.usdz */; };
+		717E53F42B48BC7200FD3404 /* Chicken_walk.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 717E53F32B48BC7200FD3404 /* Chicken_walk.usdz */; };
+		717E53F62B48BC7D00FD3404 /* Great_White_Shark.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 717E53F52B48BC7D00FD3404 /* Great_White_Shark.usdz */; };
+		717E53F82B48BC9200FD3404 /* Chick_Baby_Chicken_Bird.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 717E53F72B48BC9200FD3404 /* Chick_Baby_Chicken_Bird.usdz */; };
+		717E53FA2B48BC9A00FD3404 /* Pigeons.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 717E53F92B48BC9A00FD3404 /* Pigeons.usdz */; };
+		717E53FC2B48BCA700FD3404 /* Zebra.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 717E53FB2B48BCA700FD3404 /* Zebra.usdz */; };
 		71DD5C172B4753D700828470 /* LevelFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD5C162B4753D700828470 /* LevelFourViewController.swift */; };
 		71DD5C362B476BDC00828470 /* 0.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C342B476B6D00828470 /* 0.m4a */; };
 		71DD5C372B476BDC00828470 /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C352B476B7600828470 /* 1.m4a */; };
@@ -29,6 +36,19 @@
 		71DD5C3E2B476BDC00828470 /* 8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C332B476B5D00828470 /* 8.m4a */; };
 		71DD5C3F2B476BDC00828470 /* 9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C302B476B5D00828470 /* 9.m4a */; };
 		71DD5C432B487A7900828470 /* alkis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C422B487A7900828470 /* alkis.mp3 */; };
+		71DD5C452B48A9B300828470 /* alkiss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C442B48A9B300828470 /* alkiss.mp3 */; };
+		71DD5C502B48B17800828470 /* Yeni Kayıt 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C462B48ABE000828470 /* Yeni Kayıt 1.m4a */; };
+		71DD5C512B48B17800828470 /* Yeni Kayıt 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C472B48AC0D00828470 /* Yeni Kayıt 2.m4a */; };
+		71DD5C522B48B17800828470 /* Yeni Kayıt 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C482B48AC2900828470 /* Yeni Kayıt 3.m4a */; };
+		71DD5C532B48B17800828470 /* Yeni Kayıt 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C492B48AC3700828470 /* Yeni Kayıt 4.m4a */; };
+		71DD5C542B48B17800828470 /* Yeni Kayıt 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C4A2B48AC4A00828470 /* Yeni Kayıt 5.m4a */; };
+		71DD5C552B48B17800828470 /* Yeni Kayıt 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C4B2B48AC9700828470 /* Yeni Kayıt 6.m4a */; };
+		71DD5C562B48B17800828470 /* Yeni Kayıt 7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C4C2B48ACAD00828470 /* Yeni Kayıt 7.m4a */; };
+		71DD5C572B48B17800828470 /* Yeni Kayıt 8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C4D2B48ACC300828470 /* Yeni Kayıt 8.m4a */; };
+		71DD5C582B48B17800828470 /* Yeni Kayıt 9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C4E2B48ACCF00828470 /* Yeni Kayıt 9.m4a */; };
+		71DD5C592B48B17800828470 /* Yeni Kayıt 10.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C4F2B48ACF300828470 /* Yeni Kayıt 10.m4a */; };
+		71DD5C5B2B48B76100828470 /* Butterfly.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C5A2B48B76100828470 /* Butterfly.usdz */; };
+		71DD5C5D2B48B76800828470 /* Duck.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 71DD5C5C2B48B76800828470 /* Duck.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +64,13 @@
 		7176A1F42B1CCF6C00BE8A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7176A1FA2B1CCFB300BE8A1F /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		7176A1FC2B1CD16E00BE8A1F /* LevelOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelOneViewController.swift; sourceTree = "<group>"; };
+		717E53EF2B48BC6000FD3404 /* Scarlet_Macaw.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Scarlet_Macaw.usdz; sourceTree = "<group>"; };
+		717E53F12B48BC6900FD3404 /* Love_Birds_Parrot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Love_Birds_Parrot.usdz; sourceTree = "<group>"; };
+		717E53F32B48BC7200FD3404 /* Chicken_walk.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Chicken_walk.usdz; sourceTree = "<group>"; };
+		717E53F52B48BC7D00FD3404 /* Great_White_Shark.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Great_White_Shark.usdz; sourceTree = "<group>"; };
+		717E53F72B48BC9200FD3404 /* Chick_Baby_Chicken_Bird.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Chick_Baby_Chicken_Bird.usdz; sourceTree = "<group>"; };
+		717E53F92B48BC9A00FD3404 /* Pigeons.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Pigeons.usdz; sourceTree = "<group>"; };
+		717E53FB2B48BCA700FD3404 /* Zebra.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Zebra.usdz; sourceTree = "<group>"; };
 		71DD5C162B4753D700828470 /* LevelFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelFourViewController.swift; sourceTree = "<group>"; };
 		71DD5C2C2B476B5D00828470 /* 7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.m4a; sourceTree = "<group>"; };
 		71DD5C2D2B476B5D00828470 /* 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.m4a; sourceTree = "<group>"; };
@@ -56,6 +83,19 @@
 		71DD5C342B476B6D00828470 /* 0.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.m4a; sourceTree = "<group>"; };
 		71DD5C352B476B7600828470 /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1.m4a; path = ../../../../Downloads/1.m4a; sourceTree = "<group>"; };
 		71DD5C422B487A7900828470 /* alkis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alkis.mp3; sourceTree = "<group>"; };
+		71DD5C442B48A9B300828470 /* alkiss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alkiss.mp3; sourceTree = "<group>"; };
+		71DD5C462B48ABE000828470 /* Yeni Kayıt 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 1.m4a"; sourceTree = "<group>"; };
+		71DD5C472B48AC0D00828470 /* Yeni Kayıt 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 2.m4a"; sourceTree = "<group>"; };
+		71DD5C482B48AC2900828470 /* Yeni Kayıt 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 3.m4a"; sourceTree = "<group>"; };
+		71DD5C492B48AC3700828470 /* Yeni Kayıt 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 4.m4a"; sourceTree = "<group>"; };
+		71DD5C4A2B48AC4A00828470 /* Yeni Kayıt 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 5.m4a"; sourceTree = "<group>"; };
+		71DD5C4B2B48AC9700828470 /* Yeni Kayıt 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 6.m4a"; sourceTree = "<group>"; };
+		71DD5C4C2B48ACAD00828470 /* Yeni Kayıt 7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 7.m4a"; sourceTree = "<group>"; };
+		71DD5C4D2B48ACC300828470 /* Yeni Kayıt 8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 8.m4a"; sourceTree = "<group>"; };
+		71DD5C4E2B48ACCF00828470 /* Yeni Kayıt 9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 9.m4a"; sourceTree = "<group>"; };
+		71DD5C4F2B48ACF300828470 /* Yeni Kayıt 10.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeni Kayıt 10.m4a"; sourceTree = "<group>"; };
+		71DD5C5A2B48B76100828470 /* Butterfly.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Butterfly.usdz; sourceTree = "<group>"; };
+		71DD5C5C2B48B76800828470 /* Duck.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Duck.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +128,26 @@
 		7176A1E52B1CCF6700BE8A1F /* numbers */ = {
 			isa = PBXGroup;
 			children = (
+				71DD5C5A2B48B76100828470 /* Butterfly.usdz */,
+				71DD5C5C2B48B76800828470 /* Duck.usdz */,
+				717E53EF2B48BC6000FD3404 /* Scarlet_Macaw.usdz */,
+				717E53F12B48BC6900FD3404 /* Love_Birds_Parrot.usdz */,
+				717E53F52B48BC7D00FD3404 /* Great_White_Shark.usdz */,
+				717E53F72B48BC9200FD3404 /* Chick_Baby_Chicken_Bird.usdz */,
+				717E53F32B48BC7200FD3404 /* Chicken_walk.usdz */,
+				717E53FB2B48BCA700FD3404 /* Zebra.usdz */,
+				717E53F92B48BC9A00FD3404 /* Pigeons.usdz */,
+				71DD5C462B48ABE000828470 /* Yeni Kayıt 1.m4a */,
+				71DD5C472B48AC0D00828470 /* Yeni Kayıt 2.m4a */,
+				71DD5C482B48AC2900828470 /* Yeni Kayıt 3.m4a */,
+				71DD5C492B48AC3700828470 /* Yeni Kayıt 4.m4a */,
+				71DD5C4A2B48AC4A00828470 /* Yeni Kayıt 5.m4a */,
+				71DD5C4B2B48AC9700828470 /* Yeni Kayıt 6.m4a */,
+				71DD5C4C2B48ACAD00828470 /* Yeni Kayıt 7.m4a */,
+				71DD5C4D2B48ACC300828470 /* Yeni Kayıt 8.m4a */,
+				71DD5C4E2B48ACCF00828470 /* Yeni Kayıt 9.m4a */,
+				71DD5C4F2B48ACF300828470 /* Yeni Kayıt 10.m4a */,
+				71DD5C442B48A9B300828470 /* alkiss.mp3 */,
 				71DD5C422B487A7900828470 /* alkis.mp3 */,
 				71DD5C342B476B6D00828470 /* 0.m4a */,
 				71DD5C352B476B7600828470 /* 1.m4a */,
@@ -173,17 +233,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71DD5C502B48B17800828470 /* Yeni Kayıt 1.m4a in Resources */,
+				717E53F62B48BC7D00FD3404 /* Great_White_Shark.usdz in Resources */,
+				71DD5C512B48B17800828470 /* Yeni Kayıt 2.m4a in Resources */,
+				717E53F82B48BC9200FD3404 /* Chick_Baby_Chicken_Bird.usdz in Resources */,
+				71DD5C522B48B17800828470 /* Yeni Kayıt 3.m4a in Resources */,
+				71DD5C532B48B17800828470 /* Yeni Kayıt 4.m4a in Resources */,
+				717E53F02B48BC6000FD3404 /* Scarlet_Macaw.usdz in Resources */,
+				71DD5C542B48B17800828470 /* Yeni Kayıt 5.m4a in Resources */,
+				71DD5C5D2B48B76800828470 /* Duck.usdz in Resources */,
+				717E53FA2B48BC9A00FD3404 /* Pigeons.usdz in Resources */,
+				71DD5C552B48B17800828470 /* Yeni Kayıt 6.m4a in Resources */,
+				71DD5C562B48B17800828470 /* Yeni Kayıt 7.m4a in Resources */,
+				71DD5C572B48B17800828470 /* Yeni Kayıt 8.m4a in Resources */,
+				71DD5C582B48B17800828470 /* Yeni Kayıt 9.m4a in Resources */,
+				71DD5C592B48B17800828470 /* Yeni Kayıt 10.m4a in Resources */,
 				71DD5C362B476BDC00828470 /* 0.m4a in Resources */,
+				71DD5C5B2B48B76100828470 /* Butterfly.usdz in Resources */,
 				71DD5C372B476BDC00828470 /* 1.m4a in Resources */,
 				71DD5C382B476BDC00828470 /* 2.m4a in Resources */,
 				71DD5C392B476BDC00828470 /* 3.m4a in Resources */,
 				71DD5C3A2B476BDC00828470 /* 4.m4a in Resources */,
 				71DD5C3B2B476BDC00828470 /* 5.m4a in Resources */,
+				717E53F22B48BC6900FD3404 /* Love_Birds_Parrot.usdz in Resources */,
 				71DD5C3C2B476BDC00828470 /* 6.m4a in Resources */,
 				71DD5C432B487A7900828470 /* alkis.mp3 in Resources */,
 				71DD5C3D2B476BDC00828470 /* 7.m4a in Resources */,
+				71DD5C452B48A9B300828470 /* alkiss.mp3 in Resources */,
+				717E53F42B48BC7200FD3404 /* Chicken_walk.usdz in Resources */,
 				71DD5C3E2B476BDC00828470 /* 8.m4a in Resources */,
 				71DD5C3F2B476BDC00828470 /* 9.m4a in Resources */,
+				717E53FC2B48BCA700FD3404 /* Zebra.usdz in Resources */,
 				7176A1F32B1CCF6C00BE8A1F /* LaunchScreen.storyboard in Resources */,
 				7176A1F02B1CCF6C00BE8A1F /* Assets.xcassets in Resources */,
 				7176A1EE2B1CCF6700BE8A1F /* Main.storyboard in Resources */,

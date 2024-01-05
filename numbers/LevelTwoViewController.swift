@@ -111,4 +111,9 @@ class LevelTwoViewController: UIViewController {
               }
           }
       }
-  }
+    
+    @IBAction func geriDonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+
+    }
+}

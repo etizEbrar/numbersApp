@@ -53,7 +53,7 @@ class ViewController: UIViewController {
                 switch sender.tag {
                 case 1:
                     let levelOneVC = LevelOneViewController() // LevelOneViewController'ı burada tanımlayın
-                    levelOneVC.modalPresentationStyle = .fullScreen
+                    levelOneVC.modalPresentationStyle = .popover
                     self.present(levelOneVC, animated: true, completion: nil)
                 // Diğer seviyeler için ek durumlar ekleyebilirsiniz
                 case 2:
@@ -67,6 +67,12 @@ class ViewController: UIViewController {
                         if let levelThreeVC = storyboard?.instantiateViewController(withIdentifier: "LevelThreeViewController") as? LevelThreeViewController {
                             levelThreeVC.modalPresentationStyle = .fullScreen
                             self.present(levelThreeVC, animated: true, completion: nil)
+                        }
+                case 4:
+                        // LevelTwoViewController'a geçiş yap
+                        if let levelFourVC = storyboard?.instantiateViewController(withIdentifier: "LevelFourViewController") as? LevelFourViewController {
+                            levelFourVC.modalPresentationStyle = .fullScreen
+                            self.present(levelFourVC, animated: true, completion: nil)
                         }
                 default:
                     break

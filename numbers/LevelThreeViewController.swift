@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class LevelThreeViewController: UIViewController, AVAudioPlayerDelegate {
+class LevelThreeViewController: UIViewController {
     
     @IBOutlet weak var imageView0: UIImageView!
     @IBOutlet weak var imageView1: UIImageView!
@@ -105,31 +105,29 @@ class LevelThreeViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func playApplause() {
-        guard let url = Bundle.main.url(forResource: "alkis", withExtension: "mp3") else {
+        guard let url = Bundle.main.url(forResource: "alkiss", withExtension: "mp3") else {
             print("Alkış ses dosyası bulunamadı.")
             return
         }
 
         do {
             applausePlayer = try AVAudioPlayer(contentsOf: url)
-            applausePlayer?.delegate = self  // Delegate'i ayarla
             applausePlayer?.prepareToPlay()
             applausePlayer?.play()
 
-            // 2 saniye sonra yeni bir rakam sor
-            Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { [weak self] _ in
-                self?.promptUserToFindNumber()
+            // Alkış sesinin bitiminden sonra yeni bir rakam sor
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+                self?.applausePlayer?.stop()
+                self?.correctNumberToFind = Int.random(in: 0...9) // Yeni bir rakam seç
+                self?.playSound(for: self?.correctNumberToFind ?? 0)
             }
         } catch {
             print("Alkış sesi oynatılırken bir hata oluştu: \(error)")
         }
     }
 
-    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        if player == applausePlayer {
-            promptUserToFindNumber()  // Alkış bittikten sonra yeni rakam sor
-        }
-    }
+
+
 
     
     @objc func updateTimer() {
@@ -152,7 +150,6 @@ class LevelThreeViewController: UIViewController, AVAudioPlayerDelegate {
             score += 1
             scoreLabel.text = "Score: \(score)"
             playApplause()
-            promptUserToFindNumber()
         } else {
             tappedImageView.layer.borderColor = UIColor.red.cgColor
             tappedImageView.layer.borderWidth = 3.0
@@ -173,5 +170,9 @@ class LevelThreeViewController: UIViewController, AVAudioPlayerDelegate {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
         }
+    @IBAction func geriDonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+
     }
+}
 
